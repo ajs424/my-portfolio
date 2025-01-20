@@ -112,7 +112,7 @@ const ExperienceSection = () => {
                         {/* Role Content */}
                         <div className="relative">
                           {/* Timeline dot */}
-                          <div className="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-indigo-500"></div>
+                          {/* <div className="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-indigo-500"></div> */}
 
                           <h4 className="text-lg font-semibold text-gray-50 mb-1">
                             {role.title}
