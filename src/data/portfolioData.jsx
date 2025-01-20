@@ -39,7 +39,7 @@ export const experiences = [
     },
     roles: [
       {
-        title: "Senior Software Engineer & Product Lead",
+        title: "Senior Software Engineer - Product and Technology",
         period: "April 2023 — Present",
         focus: "Internal Platform Development",
         productHighlights: [
@@ -74,7 +74,7 @@ export const experiences = [
     },
     roles: [
       {
-        title: "Software Engineer II - Product Tech Lead",
+        title: "Software Engineer II",
         period: "December 2020 — May 2022",
         focus: "Mobile Platform & Integrations",
         productHighlights: [
@@ -110,7 +110,7 @@ export const experiences = [
         ],
       },
       {
-        title: "Software Engineer I - Product Development",
+        title: "Software Engineer I",
         period: "December 2018 — December 2020",
         focus: "Design Systems & Client Customization",
         productHighlights: [
@@ -147,7 +147,7 @@ export const experiences = [
         ],
       },
       {
-        title: "Junior Software Engineer - Product Focus",
+        title: "Junior Software Engineer",
         period: "October 2016 — December 2018",
         focus: "Accessibility & White-Label Solutions",
         productHighlights: [
