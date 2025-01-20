@@ -3,6 +3,30 @@ import GradientCard from "../ui/GradientCard";
 import { coreCompetencies, technicalSkills } from "../../data/portfolioData";
 
 const Skills = () => {
+  // Split core competencies into two categories
+  const strategySkills = coreCompetencies
+    .filter((skill) =>
+      [
+        "Product Strategy",
+        "Roadmap Development",
+        "Cross-functional Leadership",
+        "Stakeholder Management",
+        "Data-Driven Decision Making",
+      ].includes(skill)
+    )
+    .join(", ");
+
+  const developmentSkills = coreCompetencies
+    .filter((skill) =>
+      [
+        "User Experience Enhancement",
+        "Software Project Management",
+        "Agile Methodologies",
+        "System Architecture & Design",
+      ].includes(skill)
+    )
+    .join(", ");
+
   return (
     <section
       id="skills"
@@ -16,13 +40,19 @@ const Skills = () => {
             <h3 className="text-xl font-bold text-white mb-4">
               Core Competencies
             </h3>
-            <div className="grid grid-cols-1 gap-3">
-              {coreCompetencies.map((skill, index) => (
-                <div key={index} className="flex items-start text-gray-300">
-                  <span className="text-teal-300 mr-2">▹</span>
-                  {skill}
-                </div>
-              ))}
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-sm font-semibold text-white mb-2">
+                  Strategy & Leadership
+                </h4>
+                <p className="text-gray-300">{strategySkills}</p>
+              </div>
+              <div>
+                <h4 className="text-sm font-semibold text-white mb-2">
+                  Development & Design
+                </h4>
+                <p className="text-gray-300">{developmentSkills}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -34,14 +64,16 @@ const Skills = () => {
             <h3 className="text-xl font-bold text-white mb-4">
               Technical Skills
             </h3>
-            {Object.entries(technicalSkills).map(([category, skills]) => (
-              <div key={category} className="mb-4">
-                <h4 className="text-sm font-semibold text-white mb-2">
-                  {category}
-                </h4>
-                <p className="text-gray-300">{skills}</p>
-              </div>
-            ))}
+            <div className="space-y-6">
+              {Object.entries(technicalSkills).map(([category, skills]) => (
+                <div key={category}>
+                  <h4 className="text-sm font-semibold text-white mb-2">
+                    {category}
+                  </h4>
+                  <p className="text-gray-300">{skills}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -4,13 +4,12 @@ import Footer from "../components/layout/Footer";
 import About from "../components/sections/About";
 import Skills from "../components/sections/Skills";
 import Experience from "../components/sections/Experience";
-import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 
 const Portfolio = () => {
   const [text, setText] = useState("");
   const fullText = "Hello World";
-  const typingSpeed = 150;
+  const typingSpeed = 300;
 
   useEffect(() => {
     let currentIndex = 0;
@@ -34,7 +33,6 @@ const Portfolio = () => {
         <About text={text} />
         <Skills />
         <Experience />
-        <Projects />
         <Contact />
       </main>
 
